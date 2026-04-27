@@ -1,0 +1,30 @@
+{
+  "ark_version": "1.0",
+  "project_name": "ARK_Foundation",
+  "total_nodes": 3,
+  "last_node_id": "0002",
+  "entry_points": ["0000"],
+  "nodes": {
+    "0000": {
+      "file": "0000_manifest.md",
+      "type": "manifest",
+      "parents": [],
+      "children": ["0001", "0002"],
+      "tags": ["core", "setup"]
+    },
+    "0001": {
+      "file": "0000_ethics.md",
+      "type": "foundation",
+      "parents": ["0000"],
+      "children": [],
+      "tags": ["ethics", "hagakure", "sovereignty"]
+    },
+    "0002": {
+      "file": "0001_genesis_logic.md",
+      "type": "logic",
+      "parents": ["0000"],
+      "children": [],
+      "tags": ["genesis", "memory-architecture"]
+    }
+  }
+}
